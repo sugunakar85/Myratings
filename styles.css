@@ -1,7 +1,10 @@
 
 /* Explicitly center the h2 text */
-h2 {
-  text-align: center !important;
+.app-header {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Logo container for precise centering */
