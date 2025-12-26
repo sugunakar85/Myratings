@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="styles.css" />
+            <div class="logo-wrapper">
+              <img src="JVS1.png" class="menu-logo" alt="App Logo">
+            </div>
+    </head>
+    <body>
+        <div class="app-container">
+            
+            <header class="app-header">
+                <h2>Select from 1 to 5 stars rating</h2>
+            </header>
+            
+            <main>
+                <div class="card">
+                    
+                    <!-- Input Section -->
+                    <section>
+                        <h3>Feedback</h3>
+                        
+                        <input
+                        type="text"
+                        id="studentIdInput"
+                        placeholder="Enter User ID"
+                        />
+                        
+                        <div class="rating-row">
+                            <span>Rating:</span>
+                            <div id="ratingStars" class="stars"></div>
+                        </div>
+                        
+                        <button id="submitBtn" class="primary">Submit Rating</button>
+                    </section>
+                    
+                    <!-- Sorting Section -->
+                    <section>
+                        <div class="segment">
+                            <button class="segment-btn" data-sort="studentId">User ID</button>
+                            <button class="segment-btn" data-sort="ratingThenId">Top Ratings</button>
+                        </div>
+                    </section>
+                    
+                    <!-- List Section -->
+                    <section>
+                        <div id="listContainer" class="list-container"></div>
+                    </section>
+                    
+                    <!-- Action Buttons -->
+                    <section class="actions">
+                        <button id="exportBtn" class="primary">Save CSV to Files</button>
+                        <button id="resetBtn" class="danger">Reset All</button>
+                    </section>
+                    
+                </div>
+            </main>
+            
+            <footer class="app-footer">
+                <p>Feedback App</p>
+            </footer>
+            
+        </div>
+        <script src="app.js"></script>
+    </body>
+    <footer style="text-align: center; padding: 15px 0; color: #555; font-family: 'Segoe UI', sans-serif;">
+      <div style="text-align: center;">
+        <p style="margin: 5px 0;">&copy; 2025 <strong>JVS Edtek</strong>. All rights reserved.</p>
+        <p style="margin: 0; font-size: 0.85em; color: #777;">
+           Contact: <a href="mailto:myworks.jvs@gmail.com" target="_blank" rel="noopener noreferrer" style="color: #777; text-decoration: none;">myworks.jvs@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+</html>
+

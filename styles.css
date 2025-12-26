@@ -1,0 +1,160 @@
+/* Logo container for precise centering */
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 12px 0 16px 0;
+}
+
+/* Responsive logo image */
+.menu-logo {
+  width: 140px;          /* base size */
+  max-width: 60%;        /* prevents overflow on small screens */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+
+  /* smooth scaling */
+  transition: width 0.2s ease-in-out;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .menu-logo {
+    width: 180px;
+    max-width: 40%;
+  }
+}
+
+/* Very small mobile screens */
+@media (max-width: 360px) {
+  .menu-logo {
+    width: 120px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header,
+.app-footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #ffffff;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  margin: 16px;
+  padding: 16px;
+}
+
+section {
+  margin-bottom: 18px;
+}
+
+h3 {
+  margin: 4px 0 10px 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stars span {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.primary {
+  background: #2563eb;
+  color: white;
+}
+
+button.danger {
+  background: #dc2626;
+  color: white;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.segment {
+  display: flex;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.segment-btn {
+  flex: 1;
+  padding: 8px;
+  background: #f3f4f6;
+  border: none;
+  cursor: pointer;
+}
+
+.segment-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+.list-container .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.row .user {
+  display: flex;
+  flex-direction: column;
+}
+
+.row .date {
+  font-size: 12px;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
