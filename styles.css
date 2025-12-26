@@ -45,14 +45,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.app-header,
-.app-footer {
-  text-align: center;
-  padding: 10px 0;
-  background: #ffffff;
-}
-
 .card {
   background: #ffffff;
   border-radius: 14px;
