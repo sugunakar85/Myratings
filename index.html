@@ -60,7 +60,7 @@
     <!-- Footer must be inside body -->
     <footer class="app-footer" style="text-align: center; padding: 15px 0; color: #555; font-family: 'Segoe UI', sans-serif;">
       <div>
-        <p style="margin: 5px 0;">&copy; 2025 <strong>JVS Edtek</strong>. All rights reserved.</p>
+        <p style="margin: 5px 0;">&copy; <span id="currentYear"></span>  <strong>JVS Edtek</strong>. All rights reserved.</p>
         <p style="margin: 0; font-size: 0.85em; color: #777;">
           Contact:
           <a href="mailto:myworks.jvs@gmail.com"
@@ -72,9 +72,10 @@
         </p>
       </div>
     </footer>
-
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
