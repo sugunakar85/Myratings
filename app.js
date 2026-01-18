@@ -230,6 +230,6 @@ function toISOWithTimeZone(isoString) {
   const offHrs = pad(Math.floor(Math.abs(tzOffset) / 60));
   const offMin = pad(Math.abs(tzOffset) % 60);
 
-  return `${year}-${month}-${day}T${hrs}:${mins}`;
+  return `${year}-${month}-${day}T${hrs}:${mins}:{secs}`;
 }
 
